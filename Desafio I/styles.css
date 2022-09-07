@@ -1,0 +1,51 @@
+.contatos, .quem-somos {
+    background-image: url(img/fundo2.png);
+}
+
+.home {
+    background-image: url(img/fundo.png);
+}
+
+header {
+    display: flex;
+    align-items: center;
+    margin: 23px 0 23px 0;
+}
+
+.links {
+    margin: 0 0 0 auto; 
+}
+
+.container {
+    margin: auto;
+    max-width: 66vw;
+}
+
+.capa {
+    width: 100%;
+}
+
+footer{
+    text-align: center;
+    margin-top: 30px;
+}
+
+@media (max-width: 810px) {
+    .container {
+        max-width: 80vw;
+    }
+}
+
+@media (max-width: 400px) {
+    .logo {
+        width: 40%;
+    }
+
+    .links {
+        font-size: 10px;
+    }
+
+    .container {
+        max-width: 100vw;
+    }
+}
