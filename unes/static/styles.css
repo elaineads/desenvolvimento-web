@@ -1,9 +1,13 @@
-.contatos, .quem-somos {
+body {
     background-image: url(img/fundo2.png);
 }
 
-.home {
-    background-image: url(img/fundo.png);
+.home,
+.contatos,
+.quem-somos,
+.mensagens {
+    width: 100%;
+    height: 100%;
 }
 
 header {
@@ -23,6 +27,28 @@ header {
 
 .capa {
     width: 100%;
+}
+
+.contatos form {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.contatos form .enviar {
+    width: 50%;
+    margin-top: 1rem;
+}
+
+.mensagens table {
+    border-collapse: collapse;
+    margin: 4rem auto 0 auto;
+}
+
+.mensagens table th,
+.mensagens table td {
+    border: 1px solid #343434;
+    padding: .5rem;
 }
 
 footer{

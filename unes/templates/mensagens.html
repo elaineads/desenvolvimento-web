@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block contents %}
+<main class="mensagens">
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Email</th>
+                <th>Assunto</th>
+                <th>Descrição</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for row in contato %}
+            <tr>
+                <td>{{ row.0 }}</td>
+                <td>{{ row.1 }}</td>
+                <td>{{ row.2 }}</td>
+                <td>{{ row.3 }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</main>
+{% endblock %}

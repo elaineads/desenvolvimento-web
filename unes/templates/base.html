@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    {% block head %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="../static/styles.css"/>
+    {% endblock %}
+</head>
+
+<body class="container">
+
+    {% block header %}
+    <header>
+        <img src="../static/img/logo.png " alt="UNES Universidade" class="logo">
+        <div class="links">
+            <a href="{{ url_for('index') }}">Home</a><span> |</span>
+            <a href="{{ url_for('quemSomos') }}">Quem somos</a><span> |</span>
+            <a href="{{ url_for('contato') }}">Contato</a><span> |</span>
+            <a href="{{ url_for('mensagens') }}">Mensagens</a>
+        </div>
+    </header>
+    {% endblock %}
+
+    {% block contents %} {% endblock %}
+
+    {% block footer %}
+    <footer>Todos os direitos reservados</footer>
+    {% endblock %}
+
+</body>
+
+</html>
